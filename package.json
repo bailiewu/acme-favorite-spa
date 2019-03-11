@@ -1,8 +1,8 @@
 {
-  "name": "react-basic-template",
+  "name": "acme-favorite-spa",
   "version": "1.0.0",
   "description": "",
-  "main": "db.js",
+  "main": "webpack.config.js",
   "dependencies": {
     "axios": "^0.18.0",
     "babel-core": "^6.26.3",
