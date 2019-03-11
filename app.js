@@ -3,7 +3,7 @@ const { User, Thing, Favorite } = require('./db/index').models
 
 // api/users
 app.get('/users', (req, res, next) => {
-    User.findAll( { order: [['name', 'ASC']] })
+    User.findAll(/* { order: [['name', 'ASC']] }*/)
         .then( (user) => {
             res.json(user)
         })
@@ -12,7 +12,7 @@ app.get('/users', (req, res, next) => {
 
 // api/things
 app.get('/things', (req, res, next) => {
-    Thing.findAll( { order: [['name', 'ASC']] })
+    Thing.findAll( /*{ order: [['name', 'ASC']] }*/)
         .then( (thing) => {
             res.json(thing)
         })
