@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const morgan = require('morgan')
+const db = require('./db/index')
 
+db.syncAndSeed()
 
 const port = process.env.PORT || 3000;
 
